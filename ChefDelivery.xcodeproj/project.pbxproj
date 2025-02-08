@@ -14,6 +14,7 @@
 		D85DCC732D56C5B800CE4BAD /* ChefDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC722D56C5B800CE4BAD /* ChefDeliveryTests.swift */; };
 		D85DCC7D2D56C5B800CE4BAD /* ChefDeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC7C2D56C5B800CE4BAD /* ChefDeliveryUITests.swift */; };
 		D85DCC7F2D56C5B800CE4BAD /* ChefDeliveryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC7E2D56C5B800CE4BAD /* ChefDeliveryUITestsLaunchTests.swift */; };
+		D85DCC8E2D56C92E00CE4BAD /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC8D2D56C92E00CE4BAD /* NavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D85DCC782D56C5B800CE4BAD /* ChefDeliveryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChefDeliveryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85DCC7C2D56C5B800CE4BAD /* ChefDeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDeliveryUITests.swift; sourceTree = "<group>"; };
 		D85DCC7E2D56C5B800CE4BAD /* ChefDeliveryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDeliveryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D85DCC8D2D56C92E00CE4BAD /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,8 @@
 		D85DCC602D56C5B300CE4BAD /* ChefDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				D85DCC612D56C5B300CE4BAD /* ChefDeliveryApp.swift */,
-				D85DCC632D56C5B300CE4BAD /* ContentView.swift */,
+				D85DCC8C2D56C90200CE4BAD /* NavigationBar */,
+				D85DCC8B2D56C8F200CE4BAD /* App */,
 				D85DCC652D56C5B700CE4BAD /* Assets.xcassets */,
 				D85DCC672D56C5B700CE4BAD /* Preview Content */,
 			);
@@ -125,6 +127,23 @@
 				D85DCC7E2D56C5B800CE4BAD /* ChefDeliveryUITestsLaunchTests.swift */,
 			);
 			path = ChefDeliveryUITests;
+			sourceTree = "<group>";
+		};
+		D85DCC8B2D56C8F200CE4BAD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D85DCC612D56C5B300CE4BAD /* ChefDeliveryApp.swift */,
+				D85DCC632D56C5B300CE4BAD /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D85DCC8C2D56C90200CE4BAD /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				D85DCC8D2D56C92E00CE4BAD /* NavigationBar.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			files = (
 				D85DCC642D56C5B300CE4BAD /* ContentView.swift in Sources */,
 				D85DCC622D56C5B300CE4BAD /* ChefDeliveryApp.swift in Sources */,
+				D85DCC8E2D56C92E00CE4BAD /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
