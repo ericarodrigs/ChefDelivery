@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D85DCC622D56C5B300CE4BAD /* ChefDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC612D56C5B300CE4BAD /* ChefDeliveryApp.swift */; };
-		D85DCC642D56C5B300CE4BAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC632D56C5B300CE4BAD /* ContentView.swift */; };
 		D85DCC662D56C5B700CE4BAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85DCC652D56C5B700CE4BAD /* Assets.xcassets */; };
 		D85DCC692D56C5B700CE4BAD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85DCC682D56C5B700CE4BAD /* Preview Assets.xcassets */; };
 		D85DCC732D56C5B800CE4BAD /* ChefDeliveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC722D56C5B800CE4BAD /* ChefDeliveryTests.swift */; };
 		D85DCC7D2D56C5B800CE4BAD /* ChefDeliveryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC7C2D56C5B800CE4BAD /* ChefDeliveryUITests.swift */; };
 		D85DCC7F2D56C5B800CE4BAD /* ChefDeliveryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC7E2D56C5B800CE4BAD /* ChefDeliveryUITestsLaunchTests.swift */; };
 		D85DCC8E2D56C92E00CE4BAD /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC8D2D56C92E00CE4BAD /* NavigationBar.swift */; };
+		D85DCC912D56DA4700CE4BAD /* OrderTypeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC902D56DA4700CE4BAD /* OrderTypeGridView.swift */; };
+		D85DCC922D56DEA900CE4BAD /* ChefDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC612D56C5B300CE4BAD /* ChefDeliveryApp.swift */; };
+		D85DCC932D56DF2E00CE4BAD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC632D56C5B300CE4BAD /* ContentView.swift */; };
+		D85DCC962D56E28400CE4BAD /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC952D56E28400CE4BAD /* OrderType.swift */; };
+		D85DCC982D56E30E00CE4BAD /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC972D56E30E00CE4BAD /* DataSourceMock.swift */; };
+		D85DCC9A2D56E6EB00CE4BAD /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC992D56E6EB00CE4BAD /* OrderTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		D85DCC7C2D56C5B800CE4BAD /* ChefDeliveryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDeliveryUITests.swift; sourceTree = "<group>"; };
 		D85DCC7E2D56C5B800CE4BAD /* ChefDeliveryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChefDeliveryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D85DCC8D2D56C92E00CE4BAD /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		D85DCC902D56DA4700CE4BAD /* OrderTypeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeGridView.swift; sourceTree = "<group>"; };
+		D85DCC952D56E28400CE4BAD /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		D85DCC972D56E30E00CE4BAD /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
+		D85DCC992D56E6EB00CE4BAD /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +104,10 @@
 		D85DCC602D56C5B300CE4BAD /* ChefDelivery */ = {
 			isa = PBXGroup;
 			children = (
-				D85DCC8C2D56C90200CE4BAD /* NavigationBar */,
 				D85DCC8B2D56C8F200CE4BAD /* App */,
+				D85DCC942D56E23800CE4BAD /* Model */,
+				D85DCC8C2D56C90200CE4BAD /* NavigationBar */,
+				D85DCC8F2D56DA0F00CE4BAD /* GridView */,
 				D85DCC652D56C5B700CE4BAD /* Assets.xcassets */,
 				D85DCC672D56C5B700CE4BAD /* Preview Content */,
 			);
@@ -144,6 +154,24 @@
 				D85DCC8D2D56C92E00CE4BAD /* NavigationBar.swift */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		D85DCC8F2D56DA0F00CE4BAD /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				D85DCC902D56DA4700CE4BAD /* OrderTypeGridView.swift */,
+				D85DCC992D56E6EB00CE4BAD /* OrderTypeView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		D85DCC942D56E23800CE4BAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D85DCC952D56E28400CE4BAD /* OrderType.swift */,
+				D85DCC972D56E30E00CE4BAD /* DataSourceMock.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85DCC642D56C5B300CE4BAD /* ContentView.swift in Sources */,
-				D85DCC622D56C5B300CE4BAD /* ChefDeliveryApp.swift in Sources */,
+				D85DCC962D56E28400CE4BAD /* OrderType.swift in Sources */,
+				D85DCC932D56DF2E00CE4BAD /* ContentView.swift in Sources */,
+				D85DCC982D56E30E00CE4BAD /* DataSourceMock.swift in Sources */,
+				D85DCC9A2D56E6EB00CE4BAD /* OrderTypeView.swift in Sources */,
+				D85DCC922D56DEA900CE4BAD /* ChefDeliveryApp.swift in Sources */,
+				D85DCC912D56DA4700CE4BAD /* OrderTypeGridView.swift in Sources */,
 				D85DCC8E2D56C92E00CE4BAD /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
