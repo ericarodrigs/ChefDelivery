@@ -27,6 +27,8 @@
 		D85DCC982D56E30E00CE4BAD /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC972D56E30E00CE4BAD /* DataSourceMock.swift */; };
 		D85DCC9A2D56E6EB00CE4BAD /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85DCC992D56E6EB00CE4BAD /* OrderTypeView.swift */; };
 		D8662BEA2D58ED2500042CE3 /* StoreDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8662BE92D58ED2500042CE3 /* StoreDetailView.swift */; };
+		D8776DC32D5ECA7D0082FE64 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8776DC22D5ECA7D0082FE64 /* HomeService.swift */; };
+		D8776DC62D61334B0082FE64 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D8776DC52D61334B0082FE64 /* Alamofire */; };
 		D879512A2D58F5D0009BAA69 /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87951292D58F5D0009BAA69 /* StoreType.swift */; };
 		D879512C2D58F645009BAA69 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879512B2D58F645009BAA69 /* ProductType.swift */; };
 		D879512F2D590411009BAA69 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D879512E2D590411009BAA69 /* Double+.swift */; };
@@ -78,6 +80,7 @@
 		D85DCC972D56E30E00CE4BAD /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
 		D85DCC992D56E6EB00CE4BAD /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
 		D8662BE92D58ED2500042CE3 /* StoreDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailView.swift; sourceTree = "<group>"; };
+		D8776DC22D5ECA7D0082FE64 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		D87951292D58F5D0009BAA69 /* StoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreType.swift; sourceTree = "<group>"; };
 		D879512B2D58F645009BAA69 /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 		D879512E2D590411009BAA69 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8776DC62D61334B0082FE64 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +168,7 @@
 				D87C59312D57C97200CAE4C5 /* CarouselView */,
 				D87C59362D57D33300CAE4C5 /* StoresView */,
 				D87951302D5919F2009BAA69 /* ProductView */,
+				D8776DC12D5ECA650082FE64 /* Networking */,
 				D85DCC652D56C5B700CE4BAD /* Assets.xcassets */,
 				D85DCC672D56C5B700CE4BAD /* Preview Content */,
 			);
@@ -232,6 +237,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D8776DC12D5ECA650082FE64 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D8776DC22D5ECA7D0082FE64 /* HomeService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		D879512D2D590400009BAA69 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +299,9 @@
 			dependencies = (
 			);
 			name = ChefDelivery;
+			packageProductDependencies = (
+				D8776DC52D61334B0082FE64 /* Alamofire */,
+			);
 			productName = ChefDelivery;
 			productReference = D85DCC5E2D56C5B300CE4BAD /* ChefDelivery.app */;
 			productType = "com.apple.product-type.application";
@@ -358,6 +374,9 @@
 				Base,
 			);
 			mainGroup = D85DCC552D56C5B300CE4BAD;
+			packageReferences = (
+				D8776DC42D61334B0082FE64 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D85DCC5F2D56C5B300CE4BAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -406,6 +425,7 @@
 				D879512C2D58F645009BAA69 /* ProductType.swift in Sources */,
 				D87C59332D57C9BB00CAE4C5 /* CarouselItemView.swift in Sources */,
 				D85DCC932D56DF2E00CE4BAD /* ContentView.swift in Sources */,
+				D8776DC32D5ECA7D0082FE64 /* HomeService.swift in Sources */,
 				D800A01A2D594DF4005C15F8 /* ProductDetailQuantityView.swift in Sources */,
 				D879512F2D590411009BAA69 /* Double+.swift in Sources */,
 				D85DCC982D56E30E00CE4BAD /* DataSourceMock.swift in Sources */,
@@ -741,6 +761,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8776DC42D61334B0082FE64 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8776DC52D61334B0082FE64 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8776DC42D61334B0082FE64 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D85DCC562D56C5B300CE4BAD /* Project object */;
 }

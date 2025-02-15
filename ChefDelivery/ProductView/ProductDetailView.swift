@@ -10,6 +10,7 @@ import SwiftUI
 struct ProductDetailView: View {
     
     let product: ProductType
+    var service = HomeService()
     
     var body: some View {
         VStack {
@@ -21,9 +22,27 @@ struct ProductDetailView: View {
             
             Spacer()
             
-            ProductDetailButtonView()
+            ProductDetailButtonView {
+                Task {
+                    await confirmOrder()
+                }
+            }
         }
         .padding(.bottom, 16)
+    }
+    
+    func confirmOrder() async {
+        do {
+            let result = try await service.confirmOrder(product: product)
+            switch result {
+            case .success(let message):
+                print(message)
+            case .failure(let error):
+                print(error.localizedDescription)
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
 
